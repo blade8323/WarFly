@@ -15,6 +15,8 @@
 		24D0B268281E5BA500F5C643 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24D0B266281E5BA500F5C643 /* LaunchScreen.storyboard */; };
 		24D0B26F281E614700F5C643 /* Backgound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D0B26E281E614700F5C643 /* Backgound.swift */; };
 		24D0B271281EAD8200F5C643 /* Island.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D0B270281EAD8200F5C643 /* Island.swift */; };
+		24D0B273281EB3FC00F5C643 /* Cloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D0B272281EB3FC00F5C643 /* Cloud.swift */; };
+		24D0B275281EB86900F5C643 /* GameBackgroundSpritable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D0B274281EB86900F5C643 /* GameBackgroundSpritable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		24D0B267281E5BA500F5C643 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		24D0B26E281E614700F5C643 /* Backgound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Backgound.swift; sourceTree = "<group>"; };
 		24D0B270281EAD8200F5C643 /* Island.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Island.swift; sourceTree = "<group>"; };
+		24D0B272281EB3FC00F5C643 /* Cloud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cloud.swift; sourceTree = "<group>"; };
+		24D0B274281EB86900F5C643 /* GameBackgroundSpritable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBackgroundSpritable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				24D0B25D281E5BA300F5C643 /* GameScene.swift */,
 				24D0B26E281E614700F5C643 /* Backgound.swift */,
 				24D0B270281EAD8200F5C643 /* Island.swift */,
+				24D0B272281EB3FC00F5C643 /* Cloud.swift */,
+				24D0B274281EB86900F5C643 /* GameBackgroundSpritable.swift */,
 				24D0B25F281E5BA300F5C643 /* GameViewController.swift */,
 				24D0B261281E5BA300F5C643 /* Main.storyboard */,
 				24D0B264281E5BA500F5C643 /* Assets.xcassets */,
@@ -142,7 +148,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24D0B275281EB86900F5C643 /* GameBackgroundSpritable.swift in Sources */,
 				24D0B26F281E614700F5C643 /* Backgound.swift in Sources */,
+				24D0B273281EB3FC00F5C643 /* Cloud.swift in Sources */,
 				24D0B25E281E5BA300F5C643 /* GameScene.swift in Sources */,
 				24D0B260281E5BA300F5C643 /* GameViewController.swift in Sources */,
 				24D0B271281EAD8200F5C643 /* Island.swift in Sources */,
