@@ -17,8 +17,34 @@ class GameScene: SKScene {
     
     override func didMove(to view: SKView) {
         configureStartScene()
+        spawnClouds()
+        spawnIslands()
     }
     
+    fileprivate func spawnClouds() {
+        let spawnCloundWait = SKAction.wait(forDuration: 1)
+        let spawnCloudAction = SKAction.run {
+            let cloud = Cloud.populate()
+            self.addChild(cloud)
+        }
+        
+        let spawnCloudSequence = SKAction.sequence([spawnCloundWait, spawnCloudAction])
+        let spawnCloudForever = SKAction.repeatForever(spawnCloudSequence)
+        run(spawnCloudForever)
+    }
+
+    fileprivate func spawnIslands() {
+        let spawnIslandWait = SKAction.wait(forDuration: 2)
+        let spawnIslandAction = SKAction.run {
+            let island = Island.populate()
+            self.addChild(island)
+        }
+        
+        let spawnIslandSequence = SKAction.sequence([spawnIslandWait, spawnIslandAction])
+        let spawnIslandForever = SKAction.repeatForever(spawnIslandSequence)
+        run(spawnIslandForever)
+    }
+
     fileprivate func configureStartScene() {
         let centerScreen = CGPoint(x: self.size.width / 2, y: self.size.height / 2)
         let background = Backgound.populateBackground(at: centerScreen)
