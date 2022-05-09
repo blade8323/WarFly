@@ -23,6 +23,7 @@
 		24F50968282979AD003C60DA /* GreenPowerUp.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 24F50967282979AD003C60DA /* GreenPowerUp.atlas */; };
 		24F5096A2829842A003C60DA /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F509692829842A003C60DA /* Enemy.swift */; };
 		24F5096C28298489003C60DA /* Enemy_1.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 24F5096B28298489003C60DA /* Enemy_1.atlas */; };
+		24F5096E28299071003C60DA /* Enemy_2.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 24F5096D28299071003C60DA /* Enemy_2.atlas */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		24F50967282979AD003C60DA /* GreenPowerUp.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = GreenPowerUp.atlas; sourceTree = "<group>"; };
 		24F509692829842A003C60DA /* Enemy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
 		24F5096B28298489003C60DA /* Enemy_1.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Enemy_1.atlas; sourceTree = "<group>"; };
+		24F5096D28299071003C60DA /* Enemy_2.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Enemy_2.atlas; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				24D0B264281E5BA500F5C643 /* Assets.xcassets */,
 				24D0B266281E5BA500F5C643 /* LaunchScreen.storyboard */,
 				24F5096B28298489003C60DA /* Enemy_1.atlas */,
+				24F5096D28299071003C60DA /* Enemy_2.atlas */,
 				24F50967282979AD003C60DA /* GreenPowerUp.atlas */,
 				24D0B278281EEFBA00F5C643 /* PlayerPlane.atlas */,
 			);
@@ -153,6 +156,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24F5096E28299071003C60DA /* Enemy_2.atlas in Resources */,
 				24F5096C28298489003C60DA /* Enemy_1.atlas in Resources */,
 				24D0B263281E5BA300F5C643 /* Main.storyboard in Resources */,
 				24F50968282979AD003C60DA /* GreenPowerUp.atlas in Resources */,
