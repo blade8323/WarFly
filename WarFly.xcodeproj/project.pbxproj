@@ -19,6 +19,8 @@
 		24D0B275281EB86900F5C643 /* GameBackgroundSpritable + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D0B274281EB86900F5C643 /* GameBackgroundSpritable + Extension.swift */; };
 		24D0B277281EED7500F5C643 /* PlayerPlane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D0B276281EED7500F5C643 /* PlayerPlane.swift */; };
 		24D0B279281EEFBB00F5C643 /* PlayerPlane.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 24D0B278281EEFBA00F5C643 /* PlayerPlane.atlas */; };
+		24F5096628297916003C60DA /* PowerUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F5096528297916003C60DA /* PowerUp.swift */; };
+		24F50968282979AD003C60DA /* GreenPowerUp.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 24F50967282979AD003C60DA /* GreenPowerUp.atlas */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,8 @@
 		24D0B274281EB86900F5C643 /* GameBackgroundSpritable + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameBackgroundSpritable + Extension.swift"; sourceTree = "<group>"; };
 		24D0B276281EED7500F5C643 /* PlayerPlane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerPlane.swift; sourceTree = "<group>"; };
 		24D0B278281EEFBA00F5C643 /* PlayerPlane.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = PlayerPlane.atlas; sourceTree = "<group>"; };
+		24F5096528297916003C60DA /* PowerUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerUp.swift; sourceTree = "<group>"; };
+		24F50967282979AD003C60DA /* GreenPowerUp.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = GreenPowerUp.atlas; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,11 +77,13 @@
 				24D0B270281EAD8200F5C643 /* Island.swift */,
 				24D0B272281EB3FC00F5C643 /* Cloud.swift */,
 				24D0B276281EED7500F5C643 /* PlayerPlane.swift */,
+				24F5096528297916003C60DA /* PowerUp.swift */,
 				24D0B274281EB86900F5C643 /* GameBackgroundSpritable + Extension.swift */,
 				24D0B25F281E5BA300F5C643 /* GameViewController.swift */,
 				24D0B261281E5BA300F5C643 /* Main.storyboard */,
 				24D0B264281E5BA500F5C643 /* Assets.xcassets */,
 				24D0B266281E5BA500F5C643 /* LaunchScreen.storyboard */,
+				24F50967282979AD003C60DA /* GreenPowerUp.atlas */,
 				24D0B278281EEFBA00F5C643 /* PlayerPlane.atlas */,
 			);
 			path = WarFly;
@@ -142,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				24D0B263281E5BA300F5C643 /* Main.storyboard in Resources */,
+				24F50968282979AD003C60DA /* GreenPowerUp.atlas in Resources */,
 				24D0B279281EEFBB00F5C643 /* PlayerPlane.atlas in Resources */,
 				24D0B265281E5BA500F5C643 /* Assets.xcassets in Resources */,
 				24D0B268281E5BA500F5C643 /* LaunchScreen.storyboard in Resources */,
@@ -162,6 +169,7 @@
 				24D0B25E281E5BA300F5C643 /* GameScene.swift in Sources */,
 				24D0B260281E5BA300F5C643 /* GameViewController.swift in Sources */,
 				24D0B271281EAD8200F5C643 /* Island.swift in Sources */,
+				24F5096628297916003C60DA /* PowerUp.swift in Sources */,
 				24D0B258281E5BA300F5C643 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
