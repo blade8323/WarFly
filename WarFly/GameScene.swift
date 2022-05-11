@@ -133,7 +133,23 @@ class GameScene: SKScene {
 //                }
             }
         }
+        
+        enumerateChildNodes(withName: "shotSprite") { (node, stop) in
+            if node.position.y >= self.size.height + 100 {
+                node.removeFromParent()
+            }
+        }
+
     }
     
+    fileprivate func playerFire() {
+        let shot = YellowShot()
+        shot.position = self.player.position
+        shot.startMovement()
+        self.addChild(shot)
+    }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        playerFire()
+    }
 }
