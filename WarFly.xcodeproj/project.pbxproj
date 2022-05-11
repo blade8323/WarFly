@@ -19,6 +19,9 @@
 		24D0B275281EB86900F5C643 /* GameBackgroundSpritable + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D0B274281EB86900F5C643 /* GameBackgroundSpritable + Extension.swift */; };
 		24D0B277281EED7500F5C643 /* PlayerPlane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D0B276281EED7500F5C643 /* PlayerPlane.swift */; };
 		24D0B279281EEFBB00F5C643 /* PlayerPlane.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 24D0B278281EEFBA00F5C643 /* PlayerPlane.atlas */; };
+		24F3C2AC282C35AD007CE541 /* BluePowerUp.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 24F3C2AB282C35AD007CE541 /* BluePowerUp.atlas */; };
+		24F3C2AE282C3624007CE541 /* BluePowerUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F3C2AD282C3624007CE541 /* BluePowerUp.swift */; };
+		24F3C2B0282C3634007CE541 /* GreenPowerUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F3C2AF282C3634007CE541 /* GreenPowerUp.swift */; };
 		24F5096628297916003C60DA /* PowerUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F5096528297916003C60DA /* PowerUp.swift */; };
 		24F50968282979AD003C60DA /* GreenPowerUp.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 24F50967282979AD003C60DA /* GreenPowerUp.atlas */; };
 		24F5096A2829842A003C60DA /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F509692829842A003C60DA /* Enemy.swift */; };
@@ -40,6 +43,9 @@
 		24D0B274281EB86900F5C643 /* GameBackgroundSpritable + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameBackgroundSpritable + Extension.swift"; sourceTree = "<group>"; };
 		24D0B276281EED7500F5C643 /* PlayerPlane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerPlane.swift; sourceTree = "<group>"; };
 		24D0B278281EEFBA00F5C643 /* PlayerPlane.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = PlayerPlane.atlas; sourceTree = "<group>"; };
+		24F3C2AB282C35AD007CE541 /* BluePowerUp.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = BluePowerUp.atlas; sourceTree = "<group>"; };
+		24F3C2AD282C3624007CE541 /* BluePowerUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluePowerUp.swift; sourceTree = "<group>"; };
+		24F3C2AF282C3634007CE541 /* GreenPowerUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenPowerUp.swift; sourceTree = "<group>"; };
 		24F5096528297916003C60DA /* PowerUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerUp.swift; sourceTree = "<group>"; };
 		24F50967282979AD003C60DA /* GreenPowerUp.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = GreenPowerUp.atlas; sourceTree = "<group>"; };
 		24F509692829842A003C60DA /* Enemy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
@@ -79,6 +85,8 @@
 			children = (
 				24D0B257281E5BA300F5C643 /* AppDelegate.swift */,
 				24D0B25D281E5BA300F5C643 /* GameScene.swift */,
+				24F3C2AD282C3624007CE541 /* BluePowerUp.swift */,
+				24F3C2AF282C3634007CE541 /* GreenPowerUp.swift */,
 				24D0B26E281E614700F5C643 /* Backgound.swift */,
 				24D0B270281EAD8200F5C643 /* Island.swift */,
 				24D0B272281EB3FC00F5C643 /* Cloud.swift */,
@@ -93,6 +101,7 @@
 				24F5096B28298489003C60DA /* Enemy_1.atlas */,
 				24F5096D28299071003C60DA /* Enemy_2.atlas */,
 				24F50967282979AD003C60DA /* GreenPowerUp.atlas */,
+				24F3C2AB282C35AD007CE541 /* BluePowerUp.atlas */,
 				24D0B278281EEFBA00F5C643 /* PlayerPlane.atlas */,
 			);
 			path = WarFly;
@@ -162,6 +171,7 @@
 				24F50968282979AD003C60DA /* GreenPowerUp.atlas in Resources */,
 				24D0B279281EEFBB00F5C643 /* PlayerPlane.atlas in Resources */,
 				24D0B265281E5BA500F5C643 /* Assets.xcassets in Resources */,
+				24F3C2AC282C35AD007CE541 /* BluePowerUp.atlas in Resources */,
 				24D0B268281E5BA500F5C643 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -177,9 +187,11 @@
 				24D0B277281EED7500F5C643 /* PlayerPlane.swift in Sources */,
 				24D0B26F281E614700F5C643 /* Backgound.swift in Sources */,
 				24D0B273281EB3FC00F5C643 /* Cloud.swift in Sources */,
+				24F3C2AE282C3624007CE541 /* BluePowerUp.swift in Sources */,
 				24D0B25E281E5BA300F5C643 /* GameScene.swift in Sources */,
 				24D0B260281E5BA300F5C643 /* GameViewController.swift in Sources */,
 				24F5096A2829842A003C60DA /* Enemy.swift in Sources */,
+				24F3C2B0282C3634007CE541 /* GreenPowerUp.swift in Sources */,
 				24D0B271281EAD8200F5C643 /* Island.swift in Sources */,
 				24F5096628297916003C60DA /* PowerUp.swift in Sources */,
 				24D0B258281E5BA300F5C643 /* AppDelegate.swift in Sources */,
