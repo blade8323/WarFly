@@ -28,10 +28,20 @@ class GameScene: SKScene {
     }
     
     fileprivate func spawnPowerUp() {
-        let powerUp = GreenPowerUp()
-        powerUp.performRotation()
-        powerUp.position = CGPoint(x: self.size.width / 2, y: self.size.height / 2)
-        self.addChild(powerUp)
+        let spawnAction = SKAction.run {
+            let randomNumber = Int(arc4random_uniform(2))
+            let powerUp = randomNumber == 1 ? BluePowerUp() : GreenPowerUp()
+            let randomPositionX = arc4random_uniform(UInt32(self.size.width - 30))
+            
+            powerUp.position = CGPoint(x: CGFloat(randomPositionX), y: self.size.height + 100)
+            powerUp.startMovement()
+            self.addChild(powerUp)
+        }
+        
+        let randomTimeSpawn = Double(arc4random_uniform(11) + 10)
+        let waitAction = SKAction.wait(forDuration: randomTimeSpawn)
+        
+        self.run(SKAction.repeatForever(SKAction.sequence([spawnAction, waitAction])))
     }
     
     fileprivate func spawnEnemies() {
@@ -116,8 +126,11 @@ class GameScene: SKScene {
         
         player.checkPosition()
         enumerateChildNodes(withName: "sprite") { (node, stop) in
-            if node.position.y < -100 {
+            if node.position.y <= -100 {
                 node.removeFromParent()
+//                if node.isKind(of: PowerUp.self) {
+//                    print("powerUp is removed from scene")
+//                }
             }
         }
     }
