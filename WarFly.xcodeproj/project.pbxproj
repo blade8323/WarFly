@@ -19,6 +19,7 @@
 		24D0B275281EB86900F5C643 /* GameBackgroundSpritable + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D0B274281EB86900F5C643 /* GameBackgroundSpritable + Extension.swift */; };
 		24D0B277281EED7500F5C643 /* PlayerPlane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D0B276281EED7500F5C643 /* PlayerPlane.swift */; };
 		24D0B279281EEFBB00F5C643 /* PlayerPlane.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 24D0B278281EEFBA00F5C643 /* PlayerPlane.atlas */; };
+		24EE6C44282D84F2003164A4 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EE6C43282D84F2003164A4 /* Assets.swift */; };
 		24F3C2AC282C35AD007CE541 /* BluePowerUp.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 24F3C2AB282C35AD007CE541 /* BluePowerUp.atlas */; };
 		24F3C2AE282C3624007CE541 /* BluePowerUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F3C2AD282C3624007CE541 /* BluePowerUp.swift */; };
 		24F3C2B0282C3634007CE541 /* GreenPowerUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F3C2AF282C3634007CE541 /* GreenPowerUp.swift */; };
@@ -46,6 +47,7 @@
 		24D0B274281EB86900F5C643 /* GameBackgroundSpritable + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameBackgroundSpritable + Extension.swift"; sourceTree = "<group>"; };
 		24D0B276281EED7500F5C643 /* PlayerPlane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerPlane.swift; sourceTree = "<group>"; };
 		24D0B278281EEFBA00F5C643 /* PlayerPlane.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = PlayerPlane.atlas; sourceTree = "<group>"; };
+		24EE6C43282D84F2003164A4 /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		24F3C2AB282C35AD007CE541 /* BluePowerUp.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = BluePowerUp.atlas; sourceTree = "<group>"; };
 		24F3C2AD282C3624007CE541 /* BluePowerUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluePowerUp.swift; sourceTree = "<group>"; };
 		24F3C2AF282C3634007CE541 /* GreenPowerUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenPowerUp.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 			children = (
 				24D0B257281E5BA300F5C643 /* AppDelegate.swift */,
 				24D0B25D281E5BA300F5C643 /* GameScene.swift */,
+				24EE6C43282D84F2003164A4 /* Assets.swift */,
 				24F3C2AD282C3624007CE541 /* BluePowerUp.swift */,
 				24F3C2AF282C3634007CE541 /* GreenPowerUp.swift */,
 				24D0B26E281E614700F5C643 /* Backgound.swift */,
@@ -209,6 +212,7 @@
 				24F3C2AE282C3624007CE541 /* BluePowerUp.swift in Sources */,
 				24D0B25E281E5BA300F5C643 /* GameScene.swift in Sources */,
 				24D0B260281E5BA300F5C643 /* GameViewController.swift in Sources */,
+				24EE6C44282D84F2003164A4 /* Assets.swift in Sources */,
 				24F5096A2829842A003C60DA /* Enemy.swift in Sources */,
 				24F3C2B0282C3634007CE541 /* GreenPowerUp.swift in Sources */,
 				24D0B271281EAD8200F5C643 /* Island.swift in Sources */,
