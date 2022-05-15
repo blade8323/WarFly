@@ -25,6 +25,13 @@ class Shot: SKSpriteNode {
         self.setScale(0.3)
         self.name = "shotSprite"
         self.zPosition = 30
+        
+        self.physicsBody = SKPhysicsBody(texture: texture, alphaThreshold: 0.5, size: self.size)
+        self.physicsBody?.isDynamic = false //не реагировать никак на столкновения
+        self.physicsBody?.categoryBitMask = BitMaskCategory.shot
+        self.physicsBody?.collisionBitMask = BitMaskCategory.enemy //с кем сталкиваемся
+        self.physicsBody?.contactTestBitMask = BitMaskCategory.enemy //регистрация столкновений
+
     }
     
     required init?(coder aDecoder: NSCoder) {
