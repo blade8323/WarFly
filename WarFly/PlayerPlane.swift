@@ -27,6 +27,32 @@ class PlayerPlane: SKSpriteNode {
         playerPlane.position = point
         playerPlane.zPosition = 40
         
+        //        Physics body with CGPath
+        //        let offsetX = playerPlane.frame.size.width * playerPlane.anchorPoint.x
+        //        let offsetY = playerPlane.frame.size.height * playerPlane.anchorPoint.y
+        //
+        //        let path = CGMutablePath()
+        //        path.move(to: CGPoint(x: 9 - offsetX, y: 76 - offsetY))
+        //        path.addLine(to: CGPoint(x: 64 - offsetX, y: 85 - offsetY))
+        //        path.addLine(to: CGPoint(x: 71 - offsetX, y: 98 - offsetY))
+        //        path.addLine(to: CGPoint(x: 78 - offsetX, y: 99 - offsetY))
+        //        path.addLine(to: CGPoint(x: 86 - offsetX, y: 86 - offsetY))
+        //        path.addLine(to: CGPoint(x: 140 - offsetX, y: 77 - offsetY))
+        //        path.addLine(to: CGPoint(x: 143 - offsetX, y: 68 - offsetY))
+        //        path.addLine(to: CGPoint(x: 84 - offsetX, y: 56 - offsetY))
+        //        path.addLine(to: CGPoint(x: 80 - offsetX, y: 24 - offsetY))
+        //        path.addLine(to: CGPoint(x: 92 - offsetX, y: 20 - offsetY))
+        //        path.addLine(to: CGPoint(x: 95 - offsetX, y: 11 - offsetY))
+        //        path.addLine(to: CGPoint(x: 79 - offsetX, y: 6 - offsetY))
+        //        path.addLine(to: CGPoint(x: 57 - offsetX, y: 8 - offsetY))
+        //        path.addLine(to: CGPoint(x: 56 - offsetX, y: 19 - offsetY))
+        //        path.addLine(to: CGPoint(x: 72 - offsetX, y: 23 - offsetY))
+        //        path.addLine(to: CGPoint(x: 67 - offsetX, y: 57 - offsetY))
+        //        path.addLine(to: CGPoint(x: 8 - offsetX, y: 64 - offsetY))
+        //        path.addLine(to: CGPoint(x: 9 - offsetX, y: 76 - offsetY))
+        //        path.closeSubpath()
+        //        playerPlane.physicsBody = SKPhysicsBody(polygonFrom: path)
+        
         playerPlane.physicsBody = SKPhysicsBody(texture: playerPlaneTexture, alphaThreshold: 0.5, size: playerPlane.size)
         playerPlane.physicsBody?.isDynamic = false //не реагировать никак на столкновения
         playerPlane.physicsBody?.categoryBitMask = BitMaskCategory.player
@@ -38,7 +64,7 @@ class PlayerPlane: SKSpriteNode {
     
     func performFly() {
         preloadTextureArrays()
-//        planeAnimationFillArray()
+        //        planeAnimationFillArray()
         motionmanager.accelerometerUpdateInterval = 0.2
         motionmanager.startAccelerometerUpdates(to: OperationQueue.current!) { [unowned self] (data, error) in
             if let data = data {
@@ -92,51 +118,51 @@ class PlayerPlane: SKSpriteNode {
         
     }
     
-//    fileprivate func planeAnimationFillArray() {
-//
-//        SKTextureAtlas.preloadTextureAtlases([SKTextureAtlas(named: "PlayerPlane")]) {
-//            self.leftTextureArrayAnimation = {
-//                var array = [SKTexture]()
-//                for i in stride(from: 13, through: 1, by: -1) {
-//                    let number = String(format: "%02d", i)
-//                    let texture = SKTexture(imageNamed: "airplane_3ver2_\(number)")
-//                    array.append(texture)
-//                }
-//
-//                SKTexture.preload(array) {
-//                    print("preload is done")
-//                }
-//                return array
-//            }()
-//
-//            self.rightTextureArrayAnimation = {
-//                var array = [SKTexture]()
-//                for i in stride(from: 13, through: 26, by: 1) {
-//                    let number = String(format: "%02d", i)
-//                    let texture = SKTexture(imageNamed: "airplane_3ver2_\(number)")
-//                    array.append(texture)
-//                }
-//
-//                SKTexture.preload(array) {
-//                    print("preload is done")
-//                }
-//                return array
-//            }()
-//
-//            self.forwardTextureArrayAnimation = {
-//                var array = [SKTexture]()
-//                let texture = SKTexture(imageNamed: "airplane_3ver2_13")
-//                array.append(texture)
-//
-//                SKTexture.preload(array) {
-//                    print("preload is done")
-//                }
-//                return array
-//            }()
-//
-//
-//        }
-//    }
+    //    fileprivate func planeAnimationFillArray() {
+    //
+    //        SKTextureAtlas.preloadTextureAtlases([SKTextureAtlas(named: "PlayerPlane")]) {
+    //            self.leftTextureArrayAnimation = {
+    //                var array = [SKTexture]()
+    //                for i in stride(from: 13, through: 1, by: -1) {
+    //                    let number = String(format: "%02d", i)
+    //                    let texture = SKTexture(imageNamed: "airplane_3ver2_\(number)")
+    //                    array.append(texture)
+    //                }
+    //
+    //                SKTexture.preload(array) {
+    //                    print("preload is done")
+    //                }
+    //                return array
+    //            }()
+    //
+    //            self.rightTextureArrayAnimation = {
+    //                var array = [SKTexture]()
+    //                for i in stride(from: 13, through: 26, by: 1) {
+    //                    let number = String(format: "%02d", i)
+    //                    let texture = SKTexture(imageNamed: "airplane_3ver2_\(number)")
+    //                    array.append(texture)
+    //                }
+    //
+    //                SKTexture.preload(array) {
+    //                    print("preload is done")
+    //                }
+    //                return array
+    //            }()
+    //
+    //            self.forwardTextureArrayAnimation = {
+    //                var array = [SKTexture]()
+    //                let texture = SKTexture(imageNamed: "airplane_3ver2_13")
+    //                array.append(texture)
+    //
+    //                SKTexture.preload(array) {
+    //                    print("preload is done")
+    //                }
+    //                return array
+    //            }()
+    //
+    //
+    //        }
+    //    }
     
     fileprivate func movementDirectionCheck() {
         if xAcceleration > 0.001,  moveDirection != .right, stillTurning == false {
