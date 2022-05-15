@@ -28,9 +28,9 @@ class Shot: SKSpriteNode {
         
         self.physicsBody = SKPhysicsBody(texture: texture, alphaThreshold: 0.5, size: self.size)
         self.physicsBody?.isDynamic = false //не реагировать никак на столкновения
-        self.physicsBody?.categoryBitMask = BitMaskCategory.shot
-        self.physicsBody?.collisionBitMask = BitMaskCategory.enemy //с кем сталкиваемся
-        self.physicsBody?.contactTestBitMask = BitMaskCategory.enemy //регистрация столкновений
+        self.physicsBody?.categoryBitMask = BitMaskCategory.shot.rawValue
+        self.physicsBody?.collisionBitMask = BitMaskCategory.enemy.rawValue //с кем сталкиваемся
+        self.physicsBody?.contactTestBitMask = BitMaskCategory.enemy.rawValue //регистрация столкновений
 
     }
     

@@ -19,12 +19,12 @@ class GameScene: SKScene {
         spawnClouds()
         spawnIslands()
         let deadline = DispatchTime.now() + .nanoseconds(1)
-        DispatchQueue.main.asyncAfter(deadline: deadline) { [unowned self] in 
+        DispatchQueue.main.asyncAfter(deadline: deadline) { [unowned self] in
             self.player.performFly()
         }
         
         spawnPowerUp()
-//        spawnEnemy(count: 5)
+        //        spawnEnemy(count: 5)
         spawnEnemies()
         
     }
@@ -91,7 +91,7 @@ class GameScene: SKScene {
         let spawnCloudForever = SKAction.repeatForever(spawnCloudSequence)
         run(spawnCloudForever)
     }
-
+    
     fileprivate func spawnIslands() {
         let spawnIslandWait = SKAction.wait(forDuration: 2)
         let spawnIslandAction = SKAction.run {
@@ -103,7 +103,7 @@ class GameScene: SKScene {
         let spawnIslandForever = SKAction.repeatForever(spawnIslandSequence)
         run(spawnIslandForever)
     }
-
+    
     fileprivate func configureStartScene() {
         let centerScreen = CGPoint(x: self.size.width / 2, y: self.size.height / 2)
         let background = Backgound.populateBackground(at: centerScreen)
@@ -120,7 +120,7 @@ class GameScene: SKScene {
         
         player = PlayerPlane.populate(at: CGPoint(x: screen.size.width / 2, y: 100))
         self.addChild(player)
-                
+        
     }
     
     override func didSimulatePhysics() {
@@ -130,9 +130,9 @@ class GameScene: SKScene {
         enumerateChildNodes(withName: "sprite") { (node, stop) in
             if node.position.y <= -100 {
                 node.removeFromParent()
-//                if node.isKind(of: PowerUp.self) {
-//                    print("powerUp is removed from scene")
-//                }
+                //                if node.isKind(of: PowerUp.self) {
+                //                    print("powerUp is removed from scene")
+                //                }
             }
         }
         
@@ -141,7 +141,7 @@ class GameScene: SKScene {
                 node.removeFromParent()
             }
         }
-
+        
     }
     
     fileprivate func playerFire() {
@@ -159,20 +159,13 @@ class GameScene: SKScene {
 
 extension GameScene: SKPhysicsContactDelegate {
     func didBegin(_ contact: SKPhysicsContact) {
-        let bodyA = contact.bodyA.categoryBitMask
-        let bodyB = contact.bodyB.categoryBitMask
-        let player = BitMaskCategory.player
-        let enemy  = BitMaskCategory.enemy
-        let shot = BitMaskCategory.shot
-        let powerUp = BitMaskCategory.powerUp
         
-        
-        if bodyA == player && bodyB == enemy || bodyB == player && bodyA == enemy {
-            print("enemy VS player")
-        } else if bodyA == player && bodyB == powerUp || bodyB == player && bodyA == powerUp {
-            print("powerUP VS player")
-        } else if bodyA == shot && bodyB == enemy || bodyB == shot && bodyA == enemy {
-            print("enemy VS shot")
+        let contactCategory: BitMaskCategory = [contact.bodyA.category, contact.bodyB.category]
+        switch contactCategory {
+        case [.enemy, .player]: print("enemy VS player")
+        case [.powerUp, .player]: print("poweUp VS player")
+        case [.enemy, .shot]: print("enemy VS shot")
+        default: preconditionFailure("Unable to detect collision category")
         }
     }
     

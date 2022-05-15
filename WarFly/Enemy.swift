@@ -21,9 +21,9 @@ class Enemy: SKSpriteNode {
         
         self.physicsBody = SKPhysicsBody(texture: texture, alphaThreshold: 0.5, size: self.size)
         self.physicsBody?.isDynamic = true //не реагировать никак на столкновения
-        self.physicsBody?.categoryBitMask = BitMaskCategory.enemy
-        self.physicsBody?.collisionBitMask = BitMaskCategory.player | BitMaskCategory.shot //с кем сталкиваемся
-        self.physicsBody?.contactTestBitMask = BitMaskCategory.player | BitMaskCategory.shot //регистрация столкновений
+        self.physicsBody?.categoryBitMask = BitMaskCategory.enemy.rawValue
+        self.physicsBody?.collisionBitMask = BitMaskCategory.player.rawValue | BitMaskCategory.shot.rawValue //с кем сталкиваемся
+        self.physicsBody?.contactTestBitMask = BitMaskCategory.player.rawValue | BitMaskCategory.shot.rawValue //регистрация столкновений
 
     }
     

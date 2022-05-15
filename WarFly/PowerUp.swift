@@ -25,9 +25,9 @@ class PowerUp: SKSpriteNode {
         
         self.physicsBody = SKPhysicsBody(texture: texture, alphaThreshold: 0.5, size: self.size)
         self.physicsBody?.isDynamic = true //не реагировать никак на столкновения
-        self.physicsBody?.categoryBitMask = BitMaskCategory.powerUp
-        self.physicsBody?.collisionBitMask = BitMaskCategory.player //с кем сталкиваемся
-        self.physicsBody?.contactTestBitMask = BitMaskCategory.player //регистрация столкновений
+        self.physicsBody?.categoryBitMask = BitMaskCategory.powerUp.rawValue
+        self.physicsBody?.collisionBitMask = BitMaskCategory.player.rawValue //с кем сталкиваемся
+        self.physicsBody?.contactTestBitMask = BitMaskCategory.player.rawValue //регистрация столкновений
         
     }
     
