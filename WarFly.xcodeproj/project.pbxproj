@@ -22,6 +22,7 @@
 		24EE6C44282D84F2003164A4 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EE6C43282D84F2003164A4 /* Assets.swift */; };
 		24EE6C46282D8C12003164A4 /* MenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EE6C45282D8C12003164A4 /* MenuScene.swift */; };
 		24F25FEC2832D4C1009E910F /* HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F25FEB2832D4C1009E910F /* HUD.swift */; };
+		24F25FF42832D9B2009E910F /* ButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F25FF32832D9B2009E910F /* ButtonNode.swift */; };
 		24F3C2AC282C35AD007CE541 /* BluePowerUp.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 24F3C2AB282C35AD007CE541 /* BluePowerUp.atlas */; };
 		24F3C2AE282C3624007CE541 /* BluePowerUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F3C2AD282C3624007CE541 /* BluePowerUp.swift */; };
 		24F3C2B0282C3634007CE541 /* GreenPowerUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F3C2AF282C3634007CE541 /* GreenPowerUp.swift */; };
@@ -53,6 +54,7 @@
 		24EE6C43282D84F2003164A4 /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		24EE6C45282D8C12003164A4 /* MenuScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuScene.swift; sourceTree = "<group>"; };
 		24F25FEB2832D4C1009E910F /* HUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUD.swift; sourceTree = "<group>"; };
+		24F25FF32832D9B2009E910F /* ButtonNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ButtonNode.swift; path = WarFly/Classes/ButtonNode.swift; sourceTree = SOURCE_ROOT; };
 		24F3C2AB282C35AD007CE541 /* BluePowerUp.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = BluePowerUp.atlas; sourceTree = "<group>"; };
 		24F3C2AD282C3624007CE541 /* BluePowerUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluePowerUp.swift; sourceTree = "<group>"; };
 		24F3C2AF282C3634007CE541 /* GreenPowerUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenPowerUp.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 		24F25FF02832D6C5009E910F /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				24F25FF32832D9B2009E910F /* ButtonNode.swift */,
 				24F25FEB2832D4C1009E910F /* HUD.swift */,
 				24F3C2AF282C3634007CE541 /* GreenPowerUp.swift */,
 				24F3C2AD282C3624007CE541 /* BluePowerUp.swift */,
@@ -279,6 +282,7 @@
 				24F25FEC2832D4C1009E910F /* HUD.swift in Sources */,
 				24F3C2B5282C3BFC007CE541 /* Shot.swift in Sources */,
 				24D0B258281E5BA300F5C643 /* AppDelegate.swift in Sources */,
+				24F25FF42832D9B2009E910F /* ButtonNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
