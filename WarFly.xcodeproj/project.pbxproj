@@ -31,6 +31,8 @@
 		24F3C2B7282C3DCB007CE541 /* YellowShot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F3C2B6282C3DCB007CE541 /* YellowShot.swift */; };
 		24F455DE28354DFE002DDED5 /* PauseScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F455DD28354DFE002DDED5 /* PauseScene.swift */; };
 		24F455E028355156002DDED5 /* SceneManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F455DF28355156002DDED5 /* SceneManager.swift */; };
+		24F455E228355C87002DDED5 /* ParentScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F455E128355C87002DDED5 /* ParentScene.swift */; };
+		24F455E428355FA4002DDED5 /* OptionsScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F455E328355FA4002DDED5 /* OptionsScene.swift */; };
 		24F5096628297916003C60DA /* PowerUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F5096528297916003C60DA /* PowerUp.swift */; };
 		24F50968282979AD003C60DA /* GreenPowerUp.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 24F50967282979AD003C60DA /* GreenPowerUp.atlas */; };
 		24F5096A2829842A003C60DA /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F509692829842A003C60DA /* Enemy.swift */; };
@@ -65,6 +67,8 @@
 		24F3C2B6282C3DCB007CE541 /* YellowShot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowShot.swift; sourceTree = "<group>"; };
 		24F455DD28354DFE002DDED5 /* PauseScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PauseScene.swift; sourceTree = "<group>"; };
 		24F455DF28355156002DDED5 /* SceneManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneManager.swift; sourceTree = "<group>"; };
+		24F455E128355C87002DDED5 /* ParentScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentScene.swift; sourceTree = "<group>"; };
+		24F455E328355FA4002DDED5 /* OptionsScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsScene.swift; sourceTree = "<group>"; };
 		24F5096528297916003C60DA /* PowerUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerUp.swift; sourceTree = "<group>"; };
 		24F50967282979AD003C60DA /* GreenPowerUp.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = GreenPowerUp.atlas; sourceTree = "<group>"; };
 		24F509692829842A003C60DA /* Enemy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
@@ -175,6 +179,8 @@
 			children = (
 				24EE6C45282D8C12003164A4 /* MenuScene.swift */,
 				24F455DD28354DFE002DDED5 /* PauseScene.swift */,
+				24F455E328355FA4002DDED5 /* OptionsScene.swift */,
+				24F455E128355C87002DDED5 /* ParentScene.swift */,
 				24D0B25D281E5BA300F5C643 /* GameScene.swift */,
 			);
 			path = Scenes;
@@ -286,11 +292,13 @@
 				24F5096628297916003C60DA /* PowerUp.swift in Sources */,
 				24FF9D3328310E4D00BACAD6 /* BitMaskCategory.swift in Sources */,
 				24EE6C46282D8C12003164A4 /* MenuScene.swift in Sources */,
+				24F455E228355C87002DDED5 /* ParentScene.swift in Sources */,
 				24F455DE28354DFE002DDED5 /* PauseScene.swift in Sources */,
 				24F25FEC2832D4C1009E910F /* HUD.swift in Sources */,
 				24F3C2B5282C3BFC007CE541 /* Shot.swift in Sources */,
 				24D0B258281E5BA300F5C643 /* AppDelegate.swift in Sources */,
 				24F25FF42832D9B2009E910F /* ButtonNode.swift in Sources */,
+				24F455E428355FA4002DDED5 /* OptionsScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
