@@ -27,10 +27,10 @@ class GameScene: ParentScene {
         spawnClouds()
         spawnIslands()
         //тк заранее подгружаем атласы
-//        let deadline = DispatchTime.now() + .nanoseconds(1)
-//        DispatchQueue.main.asyncAfter(deadline: deadline) { [unowned self] in
+        //        let deadline = DispatchTime.now() + .nanoseconds(1)
+        //        DispatchQueue.main.asyncAfter(deadline: deadline) { [unowned self] in
         self.player.performFly()
-//        }
+        //        }
         
         spawnPowerUp()
         //        spawnEnemy(count: 5)
@@ -42,7 +42,7 @@ class GameScene: ParentScene {
         addChild(hud)
         hud.configureUI(screenSize: screenSize)
     }
-        
+    
     fileprivate func spawnPowerUp() {
         let spawnAction = SKAction.run {
             let randomNumber = Int(arc4random_uniform(2))
@@ -180,18 +180,40 @@ class GameScene: ParentScene {
             playerFire()
         }
     }
-
+    
 }
 
 
 extension GameScene: SKPhysicsContactDelegate {
     func didBegin(_ contact: SKPhysicsContact) {
         
+        let explosion = SKEmitterNode(fileNamed: "EnemyExplosion")
+        let contactPoint = contact.contactPoint
+        explosion?.position = contactPoint
+        let waitForExplosionAction = SKAction.wait(forDuration: 1.0)
+        
         let contactCategory: BitMaskCategory = [contact.bodyA.category, contact.bodyB.category]
         switch contactCategory {
         case [.enemy, .player]: print("enemy VS player")
+            if contact.bodyA.node?.name == "sprite" {
+                //enemy
+                contact.bodyA.node?.removeFromParent()
+            } else {
+                contact.bodyB.node?.removeFromParent()
+            }
+            addChild(explosion!)
+            self.run(waitForExplosionAction) {
+                explosion?.removeFromParent()
+            }
         case [.powerUp, .player]: print("poweUp VS player")
         case [.enemy, .shot]: print("enemy VS shot")
+            contact.bodyA.node?.removeFromParent()
+            contact.bodyB.node?.removeFromParent()
+            addChild(explosion!)
+            self.run(waitForExplosionAction) {
+                explosion?.removeFromParent()
+            }
+
         default: preconditionFailure("Unable to detect collision category")
         }
     }

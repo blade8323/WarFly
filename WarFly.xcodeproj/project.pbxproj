@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		24A9BE632836B00C0094AB1D /* BestScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A9BE622836B00C0094AB1D /* BestScene.swift */; };
+		24A9BE662836B8260094AB1D /* EnemyExplosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = 24A9BE642836B8260094AB1D /* EnemyExplosion.sks */; };
+		24A9BE672836B8260094AB1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24A9BE652836B8260094AB1D /* Assets.xcassets */; };
 		24D0B258281E5BA300F5C643 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D0B257281E5BA300F5C643 /* AppDelegate.swift */; };
 		24D0B25E281E5BA300F5C643 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D0B25D281E5BA300F5C643 /* GameScene.swift */; };
 		24D0B260281E5BA300F5C643 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D0B25F281E5BA300F5C643 /* GameViewController.swift */; };
@@ -44,6 +46,8 @@
 
 /* Begin PBXFileReference section */
 		24A9BE622836B00C0094AB1D /* BestScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestScene.swift; sourceTree = "<group>"; };
+		24A9BE642836B8260094AB1D /* EnemyExplosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = EnemyExplosion.sks; sourceTree = "<group>"; };
+		24A9BE652836B8260094AB1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24D0B254281E5BA300F5C643 /* WarFly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WarFly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24D0B257281E5BA300F5C643 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24D0B25D281E5BA300F5C643 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
@@ -90,6 +94,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		24A9BE682836B8320094AB1D /* Particles */ = {
+			isa = PBXGroup;
+			children = (
+				24A9BE642836B8260094AB1D /* EnemyExplosion.sks */,
+			);
+			path = Particles;
+			sourceTree = "<group>";
+		};
 		24D0B24B281E5BA300F5C643 = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +121,7 @@
 		24D0B256281E5BA300F5C643 /* WarFly */ = {
 			isa = PBXGroup;
 			children = (
+				24A9BE682836B8320094AB1D /* Particles */,
 				24F25FF22832D6E8009E910F /* Scenes */,
 				24F25FF12832D6D9009E910F /* Managers */,
 				24F25FF02832D6C5009E910F /* Classes */,
@@ -185,6 +198,7 @@
 				24F455E328355FA4002DDED5 /* OptionsScene.swift */,
 				24F455E128355C87002DDED5 /* ParentScene.swift */,
 				24D0B25D281E5BA300F5C643 /* GameScene.swift */,
+				24A9BE652836B8260094AB1D /* Assets.xcassets */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -262,10 +276,12 @@
 			files = (
 				24F5096E28299071003C60DA /* Enemy_2.atlas in Resources */,
 				24F5096C28298489003C60DA /* Enemy_1.atlas in Resources */,
+				24A9BE672836B8260094AB1D /* Assets.xcassets in Resources */,
 				24D0B263281E5BA300F5C643 /* Main.storyboard in Resources */,
 				24F3C2B2282C3B25007CE541 /* YellowAmmo.atlas in Resources */,
 				24F50968282979AD003C60DA /* GreenPowerUp.atlas in Resources */,
 				24D0B279281EEFBB00F5C643 /* PlayerPlane.atlas in Resources */,
+				24A9BE662836B8260094AB1D /* EnemyExplosion.sks in Resources */,
 				24D0B265281E5BA500F5C643 /* Assets.xcassets in Resources */,
 				24F3C2AC282C35AD007CE541 /* BluePowerUp.atlas in Resources */,
 				24D0B268281E5BA500F5C643 /* LaunchScreen.storyboard in Resources */,
