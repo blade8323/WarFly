@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24A9BE632836B00C0094AB1D /* BestScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A9BE622836B00C0094AB1D /* BestScene.swift */; };
 		24D0B258281E5BA300F5C643 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D0B257281E5BA300F5C643 /* AppDelegate.swift */; };
 		24D0B25E281E5BA300F5C643 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D0B25D281E5BA300F5C643 /* GameScene.swift */; };
 		24D0B260281E5BA300F5C643 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D0B25F281E5BA300F5C643 /* GameViewController.swift */; };
@@ -42,6 +43,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		24A9BE622836B00C0094AB1D /* BestScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestScene.swift; sourceTree = "<group>"; };
 		24D0B254281E5BA300F5C643 /* WarFly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WarFly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24D0B257281E5BA300F5C643 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24D0B25D281E5BA300F5C643 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				24EE6C45282D8C12003164A4 /* MenuScene.swift */,
+				24A9BE622836B00C0094AB1D /* BestScene.swift */,
 				24F455DD28354DFE002DDED5 /* PauseScene.swift */,
 				24F455E328355FA4002DDED5 /* OptionsScene.swift */,
 				24F455E128355C87002DDED5 /* ParentScene.swift */,
@@ -290,6 +293,7 @@
 				24F3C2B0282C3634007CE541 /* GreenPowerUp.swift in Sources */,
 				24D0B271281EAD8200F5C643 /* Island.swift in Sources */,
 				24F5096628297916003C60DA /* PowerUp.swift in Sources */,
+				24A9BE632836B00C0094AB1D /* BestScene.swift in Sources */,
 				24FF9D3328310E4D00BACAD6 /* BitMaskCategory.swift in Sources */,
 				24EE6C46282D8C12003164A4 /* MenuScene.swift in Sources */,
 				24F455E228355C87002DDED5 /* ParentScene.swift in Sources */,
