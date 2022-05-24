@@ -29,6 +29,7 @@
 		24F20F11283C0A0E0078E221 /* hitSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 24F20F0F283C0A0E0078E221 /* hitSound.wav */; };
 		24F25FEC2832D4C1009E910F /* HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F25FEB2832D4C1009E910F /* HUD.swift */; };
 		24F25FF42832D9B2009E910F /* ButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F25FF32832D9B2009E910F /* ButtonNode.swift */; };
+		24F26ADE283D401F006E504D /* GameSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F26ADD283D401F006E504D /* GameSettings.swift */; };
 		24F3C2AC282C35AD007CE541 /* BluePowerUp.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 24F3C2AB282C35AD007CE541 /* BluePowerUp.atlas */; };
 		24F3C2AE282C3624007CE541 /* BluePowerUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F3C2AD282C3624007CE541 /* BluePowerUp.swift */; };
 		24F3C2B0282C3634007CE541 /* GreenPowerUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F3C2AF282C3634007CE541 /* GreenPowerUp.swift */; };
@@ -71,6 +72,7 @@
 		24F20F0F283C0A0E0078E221 /* hitSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hitSound.wav; sourceTree = "<group>"; };
 		24F25FEB2832D4C1009E910F /* HUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUD.swift; sourceTree = "<group>"; };
 		24F25FF32832D9B2009E910F /* ButtonNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ButtonNode.swift; path = WarFly/Classes/ButtonNode.swift; sourceTree = SOURCE_ROOT; };
+		24F26ADD283D401F006E504D /* GameSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSettings.swift; sourceTree = "<group>"; };
 		24F3C2AB282C35AD007CE541 /* BluePowerUp.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = BluePowerUp.atlas; sourceTree = "<group>"; };
 		24F3C2AD282C3624007CE541 /* BluePowerUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluePowerUp.swift; sourceTree = "<group>"; };
 		24F3C2AF282C3634007CE541 /* GreenPowerUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenPowerUp.swift; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				24EE6C43282D84F2003164A4 /* Assets.swift */,
+				24F26ADD283D401F006E504D /* GameSettings.swift */,
 				24F455DF28355156002DDED5 /* SceneManager.swift */,
 				24FF9D3228310E4D00BACAD6 /* BitMaskCategory.swift */,
 			);
@@ -308,6 +311,7 @@
 			files = (
 				24D0B275281EB86900F5C643 /* GameBackgroundSpritable + Extension.swift in Sources */,
 				24F3C2B7282C3DCB007CE541 /* YellowShot.swift in Sources */,
+				24F26ADE283D401F006E504D /* GameSettings.swift in Sources */,
 				24D0B277281EED7500F5C643 /* PlayerPlane.swift in Sources */,
 				24D0B26F281E614700F5C643 /* Backgound.swift in Sources */,
 				24D0B273281EB3FC00F5C643 /* Cloud.swift in Sources */,

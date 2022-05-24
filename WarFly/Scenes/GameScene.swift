@@ -38,10 +38,14 @@ class GameScene: ParentScene {
     
     override func didMove(to view: SKView) {
         
-        if let musicURL = Bundle.main.url(forResource: "backgroundMusic", withExtension: "m4a") {
-            backGroundMusic = SKAudioNode(url: musicURL)
-            addChild(backGroundMusic)
+        gameSettings.loadGameSettings()
+        if gameSettings.isMusic && backGroundMusic == nil {
+            if let musicURL = Bundle.main.url(forResource: "backgroundMusic", withExtension: "m4a") {
+                backGroundMusic = SKAudioNode(url: musicURL)
+                addChild(backGroundMusic)
+            }
         }
+        
         
         self.scene?.isPaused = false
         guard sceneManager.gameScene == nil else { return }
@@ -285,7 +289,11 @@ extension GameScene: SKPhysicsContactDelegate {
             if contact.bodyA.node?.parent != nil && contact.bodyB.node?.parent != nil {
                 contact.bodyA.node?.removeFromParent()
                 contact.bodyB.node?.removeFromParent()
-                self.run(SKAction.playSoundFileNamed("hitSound", waitForCompletion: false))
+
+                if gameSettings.isSound {
+                    self.run(SKAction.playSoundFileNamed("hitSound", waitForCompletion: false))
+                }
+                
                 hud.score += 5
                 addChild(explosion!)
                 self.run(waitForExplosionAction) {
